@@ -1,16 +1,24 @@
 <?php
+require 'work.php';
 var_dump($argv);
-$start = microtime(true);
-$work=10;
-
-while($i=microtime(true)<=$start+$work){
-  sleep(1);
-  #if(abs(microtime(true)-$i)<1.0)
-    echo "w";
+$work = null;
+$rest = null;
+if (count($argv)!=3) {
+  echo "missing arguments!\n php pomodoro.php work_time rest_time\n work_time, rest_time - time in minutes";
 }
-fprintf ( STDOUT, "%s", "\x07" );
+else {
+  $work = (float)$argv[1];
+  var_dump($work);
+  $rest = (float)$argv[2];
+}
+
 $start = microtime(true);
-$rest=3;
+#$work=10;
+
+$w = new Work($work);
+$w->countdown();
+$start = microtime(true);
+#$rest=3;
 while($i=microtime(true)<=$start+$rest){
   sleep(1);
   echo "r";

@@ -3,7 +3,7 @@ class Work{
   private $start = 0;
   private $length  = 0;
 
-  public function __construct(int $length){
+  public function __construct(float $length){
     #$this->start = microtime(true);
     $this->length = $this->minutesToSeconds($length);
   }
@@ -12,7 +12,7 @@ class Work{
     $this->start = microtime(true);
     while($i = microtime(true) < $this->start + $this->length){
       sleep(1);
-      echo "work /n";
+      echo "work \n";
     }
     $this->beep();
   }
@@ -21,7 +21,7 @@ class Work{
     fprintf ( STDOUT, "%s", "\x07" );
   }
 
-  private function minutesToSeconds(int $length){
+  private function minutesToSeconds(float $length){
     return $length*60.0;
   }
 }
