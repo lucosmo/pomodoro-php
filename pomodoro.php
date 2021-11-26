@@ -7,6 +7,7 @@ $work = null;
 $rest = null;
 $loops = null;
 $current_loop = 0;
+$text = null;
 if (count($argv)!=4) {
   exit(" missing arguments!\n php pomodoro.php work_time break_time number_repeats\n work_time, break_time - time in minutes\n number_repeats - (int) how many loops will pomodoro do\n");
 }
@@ -20,11 +21,13 @@ else {
 while($loops > $current_loop) {
   $start = microtime(true);
   $w = new Work($work);
-  $w->countdown();
+  $text = "work";
+  $w->countdown($text);
 
   $start = microtime(true);
   $b = new Relax($rest);
-  $b->countdown();
+  $text = "rest";
+  $b->countdown($text);
   $current_loop++;
   echo "end of loop no {$current_loop}\n";
 

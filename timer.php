@@ -1,26 +1,17 @@
 <?php
-require_once 'timer.php';
-class Relax extends Timer{
-
-  public function countdown(string $text){
-    parent::countdown($text);
-  }
-
-}/*
-class Relax{
+class Timer{
   private $start = 0;
   private $length  = 0;
 
   public function __construct(float $length){
-    #$this->start = microtime(true);
     $this->length = $this->minutesToSeconds($length);
   }
 
-  public function countdown(){
+  public function countdown(string $text){
     $this->start = microtime(true);
     while($i = microtime(true) < $this->start + $this->length){
       sleep(1);
-      echo "rest \n";
+      echo "{$text} \n";
     }
     $this->beep();
   }
@@ -33,4 +24,5 @@ class Relax{
     return $length*60.0;
   }
 }
-*/
+
+?>

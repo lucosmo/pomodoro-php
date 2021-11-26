@@ -1,4 +1,13 @@
 <?php
+require_once 'timer.php';
+class Work extends Timer{
+
+  public function countdown(string $text){
+    parent::countdown($text);
+  }
+
+}
+/*
 class Work{
   private $start = 0;
   private $length  = 0;
@@ -25,3 +34,4 @@ class Work{
     return $length*60.0;
   }
 }
+*/
