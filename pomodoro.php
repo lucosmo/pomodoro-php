@@ -6,7 +6,7 @@ require 'relax.php';
 $work = null;
 $rest = null;
 $loops = null;
-if (count($argv)!=3) {
+if (count($argv)!=4) {
   exit(" missing arguments!\n php pomodoro.php work_time break_time number_repeats\n work_time, break_time - time in minutes\n number_repeats - (int) how many loops will pomodoro do\n");
 }
 else {
@@ -15,10 +15,13 @@ else {
   $loops = (int)$argv[3];
 }
 
-$start = microtime(true);
-$w = new Work($work);
-$w->countdown();
+while($loops>0) {
+  $start = microtime(true);
+  $w = new Work($work);
+  $w->countdown();
 
-$start = microtime(true);
-$b = new Relax($rest);
-$b->countdown();
+  $start = microtime(true);
+  $b = new Relax($rest);
+  $b->countdown();
+  $loops--;
+}
