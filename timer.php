@@ -24,5 +24,3 @@ class Timer{
     return $length*60.0;
   }
 }
-
-?>
