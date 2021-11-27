@@ -1,4 +1,6 @@
 <?php
+namespace Pomodoro;
+
 require 'work.php';
 require 'relax.php';
 

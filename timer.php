@@ -1,6 +1,22 @@
 <?php
+namespace Pomodoro;
+
+/**
+ * Class Timer provides basic functionality for Pomodoro tool.
+ */
+
 class Timer{
+
+  /**
+   * @var float $start Start point for countown process
+  */
+
   private $start = 0;
+
+  /**
+   * @var float $length Describes how long does the countdown phase takes
+  */
+
   private $length  = 0;
 
   public function __construct(float $length){
