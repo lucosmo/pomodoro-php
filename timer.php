@@ -14,10 +14,12 @@ class Timer{
       echo "{$text} \n";
     }
     $this->beep();
+    return;
   }
 
   private function beep(){
     fprintf ( STDOUT, "%s", "\x07" );
+    return;
   }
 
   private function minutesToSeconds(float $length){
