@@ -1,5 +1,5 @@
 # pomodoro-php
-<h1><b>Pomodoro framework implemented in PHP ad command line app.</b></h1>
+<h3><b>Pomodoro framework implemented in PHP ad command line app.</b></h3>
 <br><br>
 Run:
 <br><br>
