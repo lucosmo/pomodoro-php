@@ -9,4 +9,4 @@ Where
 
 work_time   -  time of work in minutes<br>
 break_time   - time of break in minutes<br>
-number_loops - 0 if max number of looks or any other integer
+number_loops - 0 for the max number of loops (50) or any other integer
