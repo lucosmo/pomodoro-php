@@ -5,15 +5,18 @@ namespace Pomodoro;
  * Class ProgressBar provides progress bar functionality for Pomodoro tool.
  */
 class ProgressBar {
-  $current = null;
-  $total = null;
+  private $total;
 
-  function __construct($total, $current=0) {
+  function __construct($total) {
     $this->total = $total;
-    $this->current = $current;
   }
 
-  function display($done) {
-    echo round($done/$total*100)."%\r";
+  public function display($done) {
+
+    echo round($done/$this->total*100)."%\r";
+  }
+
+  public function getTotal(){
+    return $this->total;
   }
 }
