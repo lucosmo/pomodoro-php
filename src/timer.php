@@ -33,14 +33,10 @@ class Timer{
    */
   public function countdown(){
     $pb = new ProgressBar($this->length);
-    var_dump($pb);
-    echo $this->length.PHP_EOL;
     $this->start = microtime(true);
     while(($i = microtime(true)) - $this->start < $this->length){
       sleep(1);
-      echo '$i-$this->start = '."$i-$this->start\n";
       $pb->display($i-$this->start);
-      continue;
     }
     $this->beep();
     return;
