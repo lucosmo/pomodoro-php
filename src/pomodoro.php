@@ -26,11 +26,13 @@ else {
 while($loops > $current_loop) {
   $start = microtime(true);
   $w = new Work($work);
-  $w->countdown();
+  $text = "work";
+  $w->countdown($text);
 
   $start = microtime(true);
   $b = new Relax($rest);
-  $b->countdown();
+  $text = "break";
+  $b->countdown($text);
   $current_loop++;
   echo "end of loop no {$current_loop}\n";
 }

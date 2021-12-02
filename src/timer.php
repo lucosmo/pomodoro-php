@@ -31,12 +31,12 @@ class Timer{
    *
    * @return void
    */
-  public function countdown(){
+  public function countdown($text){
     $pb = new ProgressBar($this->length);
     $this->start = microtime(true);
     while(($i = microtime(true)) - $this->start < $this->length){
       sleep(1);
-      $pb->display($i-$this->start);
+      $pb->display($i-$this->start, $text);
     }
     $this->beep();
     return;

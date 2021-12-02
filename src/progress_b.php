@@ -11,9 +11,9 @@ class ProgressBar {
     $this->total = $total;
   }
 
-  public function display($done) {
+  public function display($done, $text) {
 
-    echo "  [".round($done/$this->total*100)."%]\r";
+    echo "  [".round($done/$this->total*100)."% - $text]\r";
   }
 
   public function __get($name){
