@@ -16,7 +16,7 @@ class ProgressBar {
     echo round($done/$this->total*100)."%\r";
   }
 
-  public function getTotal(){
-    return $this->total;
+  public function __get($name){
+    return $this->name;
   }
 }
