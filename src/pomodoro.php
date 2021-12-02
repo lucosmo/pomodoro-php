@@ -3,6 +3,7 @@ namespace Pomodoro;
 
 require 'work.php';
 require 'relax.php';
+require 'progress_b.php';
 
 #var_dump($argv);
 $work = null;
@@ -25,13 +26,11 @@ else {
 while($loops > $current_loop) {
   $start = microtime(true);
   $w = new Work($work);
-  $text = "work";
-  $w->countdown($text);
+  $w->countdown();
 
   $start = microtime(true);
   $b = new Relax($rest);
-  $text = "rest";
-  $b->countdown($text);
+  $b->countdown();
   $current_loop++;
   echo "end of loop no {$current_loop}\n";
 }

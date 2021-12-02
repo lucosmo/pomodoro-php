@@ -31,11 +31,11 @@ class Timer{
    *
    * @return void
    */
-  public function countdown(string $text){
+  public function countdown(){
     $this->start = microtime(true);
     while($i = microtime(true) < $this->start + $this->length){
       sleep(1);
-      echo "{$text} \n";
+      echo " \n";
     }
     $this->beep();
     return;
