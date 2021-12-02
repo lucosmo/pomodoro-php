@@ -39,6 +39,7 @@ class Timer{
       $pb->display($i-$this->start, $text);
     }
     $this->beep();
+    
     return;
   }
 
