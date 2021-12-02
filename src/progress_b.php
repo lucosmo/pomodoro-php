@@ -13,7 +13,7 @@ class ProgressBar {
 
   public function display($done) {
 
-    echo round($done/$this->total*100)."%\r";
+    echo "  [".round($done/$this->total*100)."%]\r";
   }
 
   public function __get($name){
