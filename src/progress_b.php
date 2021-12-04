@@ -1,22 +1,26 @@
 <?php
+
 namespace Pomodoro;
 
 /**
  * Class ProgressBar provides progress bar functionality for Pomodoro tool.
  */
-class ProgressBar {
-  private $total;
+class ProgressBar
+{
+    private $total;
 
-  function __construct($total) {
-    $this->total = $total;
-  }
+    public function __construct($total)
+    {
+        $this->total = $total;
+    }
 
-  public function display($done, $text) {
+    public function display($done, $text)
+    {
+        echo "  [".round($done/$this->total*100)."% - $text]\r";
+    }
 
-    echo "  [".round($done/$this->total*100)."% - $text]\r";
-  }
-
-  public function __get($name){
-    return $this->name;
-  }
+    public function __get($name)
+    {
+        return $this->name;
+    }
 }
