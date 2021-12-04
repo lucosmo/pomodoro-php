@@ -8,9 +8,9 @@ namespace Pomodoro;
 
 class Timer
 {
-  /**
-   * @var float $start Start point for countown process
-   */
+    /**
+     * @var float $start Start point for countown process
+     */
     private $start = 0;
 
     /**

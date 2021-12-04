@@ -34,5 +34,5 @@ while ($loops > $current_loop) {
     $text = "break";
     $b->countdown($text);
     $current_loop++;
-    echo "end of loop no {$current_loop}\n";
+    echo " end of loop no {$current_loop}\n";
 }
