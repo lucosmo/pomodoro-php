@@ -6,7 +6,7 @@ Run:
 php pomodoro.php work_time break_time number_loops
 <br>
 Where
-
+<br><br>
 work_time   -  time of work in minutes<br>
 break_time   - time of break in minutes<br>
 number_loops - 0 for the max number of loops (50) or any other integer
