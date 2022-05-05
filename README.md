@@ -1,10 +1,11 @@
 # pomodoro-php
 
 ### Description
-Pomodoro framework implemented in PHP ad command line app.
+Pomodoro framework implemented in PHP as command line app.
 
 ### Features
-There is attached progress bar for work phase and rest phase of pomodoro.
+- Customised times for work/break
+- Progress bar for work phase and rest phase
 
 ### Usage
 Launch pomodoro:
