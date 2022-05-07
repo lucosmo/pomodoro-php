@@ -1,7 +1,7 @@
 # pomodoro-php
 
 ### Description
-Pomodoro framework implemented in PHP as command line app.
+Pomodoro framework implemented in PHP as command line application.
 
 ### Features
 - Customised times for work/break
