@@ -6,6 +6,7 @@ Pomodoro framework implemented in PHP as command line application.
 ### Features
 - Customised times for work/break
 - Progress bar for work phase and rest phase
+- System sound notification after end of each phase
 
 ### Usage
 Launch pomodoro:
