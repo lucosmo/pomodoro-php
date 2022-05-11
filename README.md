@@ -1,7 +1,7 @@
 # pomodoro-php
 
 ### Description
-<a href="https://en.m.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro technique</a> implemented in PHP as command line application.
+<a href="https://en.m.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro technique</a> coded in PHP as command line application.
 
 ### Features
 - Customised times for work/break
