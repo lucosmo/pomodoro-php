@@ -5,7 +5,7 @@
 
 ### Features
 - Customised times for work/break
-- Progress bar for work phase and rest phase
+- Progress bar for work/break phase
 - System sound notification after end of each phase
 
 ### Usage
