@@ -13,7 +13,9 @@ class ProgressBar
     {
         $this->total = $total;
     }
-
+    /*
+    * Counts percent of passed time and presents it in console
+    */
     public function display($done, $text)
     {
         echo "  [".round($done/$this->total*100)."% - $text]\r";
