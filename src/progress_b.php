@@ -13,8 +13,17 @@ class ProgressBar
     {
         $this->total = $total;
     }
-    /*
-    * Counts percent of passed time and presents it in console
+    /** 
+     * Prints out progress bar
+     *
+     * Counts percent of passed time and presents it in console
+ 	 *
+ 	 * @see Function/method/class relied on
+     * @link URL
+     * 
+     * @param float $done Time which passed since beginning ot the phase.
+     * @param string $text Text which should be displayed in progress bar.
+     * @return 
     */
     public function display($done, $text)
     {
