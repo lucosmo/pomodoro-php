@@ -23,7 +23,7 @@ class ProgressBar
      * 
      * @param float $done Time which passed since beginning ot the phase.
      * @param string $text Text which should be displayed in progress bar.
-     * @return 
+     * @return nothing NEEDS TO BE CHANGED
     */
     public function display($done, $text)
     {
